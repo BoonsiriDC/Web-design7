@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#" method="post">
+        <h2>แบบฟอร์มลงทะเบียน</h2>
+        
+        <div>
+          <label for="fullname">ชื่อ-นามสกุล:</label>
+          <input type="text" id="fullname" name="fullname" placeholder="กรุณากรอกชื่อ-นามสกุล" required>
+        </div>
+        
+        <div>
+          <label for="email">อีเมล:</label>
+          <input type="email" id="email" name="email" placeholder="example@domain.com" required>
+        </div>
+        
+        <div>
+          <label for="password">รหัสผ่าน:</label>
+          <input type="password" id="password" name="password" required>
+        </div>
+        
+        <div>
+          <label>เพศ:</label>
+          <input type="radio" id="male" name="gender" value="male">
+          <label for="male">ชาย</label>
+          <input type="radio" id="female" name="gender" value="female">
+          <label for="female">หญิง</label>
+        </div>
+        
+        <div>
+          <label>ตำแหน่ง:</label>
+          <input type="checkbox" id="web" name="interests[]" value="web">
+          <label for="web">Web Development</label>
+          <input type="checkbox" id="mobile" name="interests[]" value="mobile">
+          <label for="mobile">Mobile App</label>
+        </div>
+        
+        <div>
+          <button type="submit">ลงทะเบียน</button>
+          <button type="reset">ล้างข้อมูล</button>
+        </div>
+      </form>
+</body>
+</html>
